@@ -2009,3 +2009,9 @@ footer {
         gap: 20px
     }
 }
+
+a:link {
+    color: rgb(195, 233, 245);
+    background-color: transparent;
+    text-decoration: none;
+  }

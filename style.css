@@ -411,7 +411,15 @@ noscript {
     font-weight: 100
 }
 
+.mobile-navbar-tabs-ul a {
+    color: var(--color-white);
+}
+
 .light-mode .navbar-tabs-ul a {
+    color: black;
+}
+
+.light-mode .mobile-navbar-tabs-ul a {
     color: black;
 }
 

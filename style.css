@@ -411,6 +411,10 @@ noscript {
     font-weight: 100
 }
 
+.light-mode .navbar-tabs-ul a {
+    color: black;
+}
+
 .logo {
     width: 10%;
     height: 100%;

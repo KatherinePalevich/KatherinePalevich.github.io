@@ -1728,7 +1728,7 @@ footer {
     }
 
     .mobile-navbar-tabs-ul {
-        background-color: var(--color-light-mode);
+        background-color: var(--color-dark-mode);
         width: 100%;
         height: 100%;
         display: flex;

@@ -24,14 +24,19 @@
 
   <style>
     /* Styling for the content text and bullets to ensure readability */
+    .about-info {
+      padding: 0 40px; /* Side padding */
+    }
     .about-info p, .about-info h3, .about-info ul li {
       color: #ffffff !important;
     }
     .about-info h3 {
       font-family: 'Orbitron', sans-serif;
       font-size: 1.8rem;
-      margin-top: 2rem;
-      margin-bottom: 1rem;
+      margin-top: 2.5rem;
+      margin-bottom: 1.2rem;
+      border-bottom: 1px solid #333;
+      padding-bottom: 10px;
     }
     .about-info ul {
       list-style: none;
@@ -39,16 +44,33 @@
     }
     .about-info ul li {
       position: relative;
-      padding-left: 1.5rem;
-      margin-bottom: 0.8rem;
+      padding-left: 1.8rem;
+      margin-bottom: 1rem;
       font-family: 'Fira Code', monospace;
+      font-size: 0.95rem;
+      line-height: 1.6;
     }
+    /* Main Bullet */
     .about-info ul li::before {
-      content: "\2022"; /* Unicode bullet point dot */
+      content: "\2022"; 
       position: absolute;
       left: 0;
       color: #ffffff;
       font-weight: bold;
+    }
+    /* Sub Bullet Styling */
+    .about-info ul ul {
+      margin-top: 0.5rem;
+      padding-left: 1.5rem;
+    }
+    .about-info ul ul li {
+      margin-bottom: 0.5rem;
+      font-size: 0.9rem;
+    }
+    .intro-section {
+        margin-bottom: 2rem;
+        font-family: 'Fira Code', monospace;
+        line-height: 1.7;
     }
   </style>
 </head>
@@ -152,62 +174,286 @@
 
         <div class="info-dp-section">
           <div class="about-info">
-            <p tabindex="0">
-              Hello! My name is Katherine, I interned at Pinterest in the summer of 2025 and at Experian in the summer of 2024. This experience is heavily biased towards working at a large tech company, and as an iOS engineer where projects are usually 4 - 8 weeks long. I attended the University of Washington which is on a quarter system, meaning I was part of a later cohort starting in early June. Use these checkpoints as guidelines for your progress!
-            </p>
-            <br />
+            <div class="intro-section">
+                <p tabindex="0">
+                  Hello! My name is Katherine, I interned at Pinterest in the summer of 2025. I also interned at Experian in the summer of 2024. Here is what I wish I knew how each week should go before I started my internships. This experience is heavily biased towards working at a large tech company, and as an iOS engineer where projects are usually 4 - 8 weeks long. I also attended the University of Washington which is on a quarter system. My school ended in early June rather than mid May, which meant that I was part of a later cohort. This has some advantages as you will read about. As such, I trust that you will internalize the following advice as guidelines rather than rules 🏴‍☠️
+                </p>
+                <br />
+                <p tabindex="0">
+                  I have organized the advice using a timeline, breaking down checkpoints by week. This is based on my personal habit of setting calendar reminders periodically during my internship to check in on my progress. You can do this too so you don’t have to manually check this document every sunday night.
+                </p>
+            </div>
 
             <h3 tabindex="0">Week 1: Ease into it</h3>
             <ul>
-              <li tabindex="0">Carefully set up your accounts and keep track of passwords in a specific document. Save usernames and passwords in a personal account for any accounts you may need access to after leaving.</li>
-              <li tabindex="0">Set up HSA, 401k, and Roth IRA contribution amounts as they become available.</li>
-              <li tabindex="0">Learn what company perks you get and spend your employee wellness funds before the quarter ends.</li>
-              <li tabindex="0">Set up a journal to keep track of tasks, meeting notes, and feedback. This is your "receipt" for performance reviews.</li>
-              <li tabindex="0">Note who you talked to and save useful links. Create a tab for screenshots of praise messages for a morale boost.</li>
-              <li tabindex="0">Exhaust documentation and internal search tools before asking humans for help. When asking, provide context on what you already tried.</li>
-              <li tabindex="0">Get lunch with other interns and team members. Meet your manager to discuss expectations, the performance rubric, and your goals for a return offer.</li>
+              <li tabindex="0">Carefully set up your accounts and keep track of passwords in a specific document
+                <ul>
+                  <li tabindex="0">You might need to set up corporate accounts, developer accounts, insurance accounts, etc. Some of these accounts you will need access to after you leave Pinterest, so save the usernames and passwords in a personal non work account</li>
+                </ul>
+              </li>
+              <li tabindex="0">Set up Health Savings Account (HSA), 401k, and Roth IRA contribution amounts
+                <ul>
+                  <li tabindex="0">Not all of these are available to interns, and many aren’t available to be set up until later in your internship after working for a number of days. So set calendar reminders to keep track of when you can start contributing</li>
+                </ul>
+              </li>
+              <li tabindex="0">Learn what company perks you get and how to redeem them
+                <ul>
+                  <li tabindex="0">Pinterest gave an employee wellness fund, $150 every quarter</li>
+                  <li tabindex="0">Look at when company quarters start and end. If you join at the end of the quarter, make sure you spend your perks before they’re gone!</li>
+                </ul>
+              </li>
+              <li tabindex="0">Set up a journal to keep track of tasks, meeting notes, and feedback (including praises and area of improvement)
+                <ul>
+                  <li tabindex="0">This will be your receipt to point back at when writing your mid and end of internship reviews</li>
+                  <li tabindex="0">At the end of every day, take ten minutes to write down the most significant tasks you accomplished, and what you need to complete next in order of prioritization.</li>
+                  <li tabindex="0">Also note who you talked to and any useful links you found</li>
+                  <li tabindex="0">Make a specific tab with screenshot messages of praise from others. This can be helpful to review when you need a morale boost</li>
+                  <li tabindex="0">Share the journal with your mentor and manager if you feel comfortable, they can look at it to see your progress and how productive you are</li>
+                </ul>
+              </li>
+              <li tabindex="0">Get started on your ramp up project
+                <ul>
+                  <li tabindex="0">Practice fully exhausting your non human sources of knowledge</li>
+                  <li tabindex="0">Look up ramp up docs, use keywords to search the company documents</li>
+                  <li tabindex="0">If you still don’t have an answer, then ask:
+                    <ul>
+                      <li tabindex="0">An intern on a sister team</li>
+                      <li tabindex="0">Your mentor</li>
+                      <li tabindex="0">Another team member in the same SWE role type</li>
+                    </ul>
+                  </li>
+                  <li tabindex="0">Since it’s your first week, you get a pass on asking all the first time questions, so do it!</li>
+                  <li tabindex="0">When asking questions, provide context on the problem, what you already tried, what you think is still wrong, and where you would like them to help guide you</li>
+                  <li tabindex="0">Write down answers, try not to ask the same question twice. But definitely don’t get yourself stuck because you’re too scared to ask again</li>
+                </ul>
+              </li>
+              <li tabindex="0">Socialize
+                <ul>
+                  <li tabindex="0">Get lunch with the other interns</li>
+                  <li tabindex="0">Get to know who is in your cohort (cohort 2) versus an earlier start date cohort (cohort 1). This will be useful in a few weeks to learn from the earlier cohort’s mid internship review</li>
+                  <li tabindex="0">Make plans with other interns outside of work: go to a restaurant after work, explore the city together, take a class, workout together</li>
+                  <li tabindex="0">Building shared memories will make it much easier to approach them for help in the future</li>
+                  <li tabindex="0">It’s also such a fun and unique experience to be out on the town with new people!</li>
+                  <li tabindex="0">Get lunch with people on your team</li>
+                  <li tabindex="0">Learn about the team history, who on the team do people respect a lot, get insight into past intern work, and what their expectations are for you</li>
+                </ul>
+              </li>
+              <li tabindex="0">Meet your manager
+                <ul>
+                  <li tabindex="0">Ask about what made past interns successful vs not</li>
+                  <li tabindex="0">You can subtly learn how they will be grading your performance, so take notes and try to implement the behaviors they want to see</li>
+                  <li tabindex="0">Ask about communication expectations, when you want to meet and how often you should update them on your progress</li>
+                  <li tabindex="0">Tell them how you like to be supported, ask about their leadership style</li>
+                  <li tabindex="0">State your goals for the summer. This includes but is not limited to:
+                    <ul>
+                      <li tabindex="0">You want a return offer</li>
+                      <li tabindex="0">You want to get experience presenting in front of other people</li>
+                      <li tabindex="0">You want to learn about the business why of the team product</li>
+                      <li tabindex="0">You want to develop your skills as software engineer</li>
+                    </ul>
+                  </li>
+                  <li tabindex="0">Ask for the intern performance rubric</li>
+                  <li tabindex="0">Have your manager explain to you what the most critical pieces of the rubric are, and what distinguishes an intern from a new grad</li>
+                  <li tabindex="0">By the middle of the internship you should be comfortably meeting all expectations of an intern</li>
+                  <li tabindex="0">By the end of the internship you should be meeting the new grad expectations as best you can</li>
+                  <li tabindex="0">Knowing the specific wording they use to grade performance can help you subtly signal your adequacy in meeting these expectations</li>
+                  <li tabindex="0">All these things should demonstrate clearly to your manager that you are serious about doing a good job. Hopefully they will share with you their excitement for the summer and desire to manage you through a successful internship</li>
+                </ul>
+              </li>
+              <li tabindex="0">Meet your mentor
+                <ul>
+                  <li tabindex="0">Ask what their communication expectations are (do they want a daily morning priority list of what you’re going to accomplish? Do they prefer that you only do this weekly?)</li>
+                  <li tabindex="0">You’ll likely be working with your mentor daily vs your manager weekly. So it’s good to understand what the difference looks like.</li>
+                  <li tabindex="0">Ask for knowledge resources
+                    <ul>
+                      <li tabindex="0">who on the team/org is helpful to talk to</li>
+                      <li tabindex="0">which docs website links are useful vs outdated</li>
+                      <li tabindex="0">important recurring meetings to attend</li>
+                    </ul>
+                  </li>
+                  <li tabindex="0">You’ll have a lot of meetings on your calendar as a default for being on specific teams/orgs. Most of these meetings are not relevant to you. But some might be informative for learning how larger organizational decisions get made. Your mentor should tell you which ones are relevant</li>
+                  <li tabindex="0">After the meeting summarize important points and send to your mentor, highlight 1-2 action items that you will be accomplishing if relevant</li>
+                </ul>
+              </li>
             </ul>
 
-            <h3 tabindex="0">Week 2: Defining Communication</h3>
+            <h3 tabindex="0">Week 2:</h3>
             <ul>
-              <li tabindex="0">Establish communication expectations with your mentor—daily vs. weekly syncs.</li>
-              <li tabindex="0">Ask for knowledge resources and identify which recurring meetings are actually relevant to your project.</li>
-              <li tabindex="0">Summarize meeting points and action items for your mentor to show progress.</li>
-              <li tabindex="0">Aim to finish your ramp-up project by the end of this week.</li>
-              <li tabindex="0">Set up coffee chats (max twice a week) with PMs, UX designers, and engineers of various levels.</li>
+              <li tabindex="0">Get into the meat of your ramp up project, if it’s portioned right, hopefully you will be done with the ramp up project by the end of this week or earlier</li>
+              <li tabindex="0">Continue socializing with your team and other interns
+                <ul>
+                  <li tabindex="0">Set up coffee chats with team members. If you are an introvert like me, do this max twice a week to not overwhelm yourself. This should include PMs, UX designers, Mid-level engineers, and senior engineers</li>
+                </ul>
+              </li>
+              <li tabindex="0">Attend the big meetings where you can sit in the back and listen to the conversations
+                <ul>
+                  <li tabindex="0">You can get a sense of what the big projects going on are</li>
+                  <li tabindex="0">You learn what leadership prioritizes and how they justify their approval vs rejection of proposals</li>
+                </ul>
+              </li>
+              <li tabindex="0">Find Employee Resource Groups (ERGs) that you feel connected to, mark upcoming meetings in your calendar to attend</li>
             </ul>
 
-            <h3 tabindex="0">Week 3 & 4: Projects and Demos</h3>
+            <h3 tabindex="0">Week 3:</h3>
             <ul>
-              <li tabindex="0">Begin your first big project.</li>
-              <li tabindex="0">Talk to interns in earlier cohorts about their mid-internship reviews to learn from their feedback early.</li>
-              <li tabindex="0">Volunteer to demo your work in team meetings to practice showcasing your progress.</li>
+              <li tabindex="0">Begin your first big project</li>
+              <li tabindex="0">Around this time, interns from cohort 1 are getting their mid year review
+                <ul>
+                  <li tabindex="0">I found it helpful to politely ask how their reviews went</li>
+                  <li tabindex="0">If they are nice, they will share with you their successes and what they wish they had done better</li>
+                  <li tabindex="0">Learn from them! You will be them in three weeks, which is not a lot of time</li>
+                </ul>
+              </li>
+              <li tabindex="0">Immediately correct your behavior if you see yourself falling into habits that they were given feedback on to improve</li>
             </ul>
 
-            <h3 tabindex="0">Week 5 & 6: Mid-Internship Review</h3>
+            <h3 tabindex="0">Week 4:</h3>
             <ul>
-              <li tabindex="0">Review your journal for technical and interpersonal wins. Align these with the intern rubric keywords.</li>
-              <li tabindex="0">Use your review to identify concrete action items for improvement. Don't assume everything is fine; always look for ways to grow.</li>
-              <li tabindex="0">Wrap up your first project and start your second.</li>
+              <li tabindex="0">In team meetings where there is demo time, volunteer to demo what you’ve been working on
+                <ul>
+                  <li tabindex="0">This is a great chance to gain visibility and practice showcasing your work</li>
+                  <li tabindex="0">Everyone knows that you just started so they aren’t expecting much, so use it to your advantage to stumble and work through how to present your work effectively</li>
+                  <li tabindex="0">The demo can be super short, like less than two minutes. Talk about the problem space, your ultimate goal, what you have accomplished so far</li>
+                </ul>
+              </li>
+              <li tabindex="0">Be open to answering questions about your work. If anything is too complicated/confusing to answer, defacto to your mentor to answer or say “I’m not sure but let me find out and get back to you later today”
+                <ul>
+                  <li tabindex="0">It could be a nice connection made if you follow up with that coworker later and establish a relationship!</li>
+                </ul>
+              </li>
             </ul>
 
-            <h3 tabindex="0">Week 7 & 8: Skip-Levels and Showcases</h3>
+            <h3 tabindex="0">Week 5:</h3>
             <ul>
-              <li tabindex="0">Meet your skip-manager to learn about their career journey and get high-level business context.</li>
-              <li tabindex="0">Attend final intern presentations for the first cohort. Take notes on what makes a presentation effective—graphics, demos, and high-level technical summaries.</li>
+              <li tabindex="0">Mid internship reviews are due</li>
+              <li tabindex="0">Review your journal and take note of the top three technical and interpersonal tasks you accomplished</li>
+              <li tabindex="0">Go over your intention to write about these wins with your mentor. They will help you understand which tasks are actually worth mentioning and how to do so to put yourself in the best light
+                <ul>
+                  <li tabindex="0">They might even bring up tasks you did that you didn’t realize were so impressive. Make sure to include those because your mentor will probably write about it in their review of you. And it’s good to have consistency for when future managers read these review documents and decide to bring you back full time</li>
+                </ul>
+              </li>
+              <li tabindex="0">Look at the intern performance rubric that you went over with your manager in week 1. Pick out keywords that you embodied and incorporate them into your review</li>
+              <li tabindex="0">Use AI to polish your writing</li>
             </ul>
 
-            <h3 tabindex="0">Week 11 & 12: Wrapping Up</h3>
+            <h3 tabindex="0">Week 6:</h3>
             <ul>
-              <li tabindex="0">Start your end-of-internship presentation early. Record a short practice video and a longer technical version for your org.</li>
-              <li tabindex="0">Create hand-off documents and update internal ramp-up docs to help the next hire.</li>
-              <li tabindex="0">Set up final meetings with your mentor and manager. Reiterate your desire for a return offer and request LinkedIn recommendations.</li>
+              <li tabindex="0">Have your mid internship review
+                <ul>
+                  <li tabindex="0">Your performance grade might be lower than what you expected and that’s okay</li>
+                  <li tabindex="0">Here’s what’s important to know: Your mentor and manager want to see you improve. It reflects well on them and you if by the end of your internship, you are able to grow your skills as an engineer after receiving feedback</li>
+                  <li tabindex="0">Feedback might feel tough in the moment, but the challenge should invigorate you to work harder</li>
+                  <li tabindex="0">You should get concrete action items of how to improve upon your work</li>
+                  <li tabindex="0">If you don’t, in the next check in with your mentor and manager explicitly put in the agenda how you can improve what you’re doing as an intern. If you don’t get feedback from your mentor and manager, don’t assume everything is fine. There’s always something to do better, especially as an intern</li>
+                  <li tabindex="0">If you still don’t have any concrete action items, ask your coworkers for how you can improve.</li>
+                </ul>
+              </li>
+              <li tabindex="0">In your journal, note down 2-3 goals of what you want to improve upon how you work as an engineer and how you will do it
+                <ul>
+                  <li tabindex="0">Every day check in on those goals and consciously try to work in those changes to your workflow</li>
+                  <li tabindex="0">When you have successfully done so, note it down so you can reference it in your end of internship review</li>
+                </ul>
+              </li>
+              <li tabindex="0">Wrap up your first project. Start working on your second project</li>
             </ul>
 
-            <h3 tabindex="0">Last Day</h3>
-            <p tabindex="0">
-              Send out thank-you messages, take pictures to remember the experience (no sensitive info!), and turn in your equipment. Congratulations on successfully completing your summer internship!
-            </p>
+            <h3 tabindex="0">Week 7:</h3>
+            <ul>
+              <li tabindex="0">Continue working on your second project, continue taking notes of wins</li>
+              <li tabindex="0">Meet your skip manager, aka your manager’s manager, if you haven’t already
+                <ul>
+                  <li tabindex="0">By this time you have a good sense of the business needs are and how your project fits in to that</li>
+                  <li tabindex="0">Ask them about their career journey and what advice they have for interns</li>
+                  <li tabindex="0">If you’re too scared to do this one on one, schedule a meeting with the other interns/new grads in your org to make it more seminar style. You might even get a free coffee/smoothie out of it!</li>
+                </ul>
+              </li>
+              <li tabindex="0">Check in with your mentor on how you’re performing, are you meeting the new expectations based on how you needed to improve your performance during the mid internship review</li>
+            </ul>
+
+            <h3 tabindex="0">Week 8:</h3>
+            <ul>
+              <li tabindex="0">The first cohort will be wrapping up their internship this week
+                <ul>
+                  <li tabindex="0">Attend their intern project showcase presentations</li>
+                  <li tabindex="0">Take notes on which presentations were effective and fun to watch for your own presentation</li>
+                  <li tabindex="0">You’ll notice that the best intern presentations stayed high level on the technical details, had fun graphics, actually demo’d their project working, and were an engaged speaker</li>
+                </ul>
+              </li>
+              <li tabindex="0">Check in with your mentor on how you’re performing, are you meeting the new expectations based on how you need to improve your performance</li>
+            </ul>
+
+            <h3 tabindex="0">Week 9:</h3>
+            <ul>
+              <li tabindex="0">The number of interns has likely slimmed down a lot, the office might feel quieter</li>
+              <li tabindex="0">Continue pushing hard on your intern projects, getting feedback from your mentor on how you are performing</li>
+            </ul>
+
+            <h3 tabindex="0">Week 10:</h3>
+            <ul>
+              <li tabindex="0">By now you should know whether you will be finishing your current intern project. This is your last week to make up the slack if you are behind schedule</li>
+              <li tabindex="0">Think about who else in the company you haven’t had time to meet with yet. Schedule meetings with them for the rest of your time here
+                <ul>
+                  <li tabindex="0">Ask the principle engineers, people in marketing, the directors, it never hurts to ask and make a new connection. You’ll also learn a lot about other fields, putting your work as a SWE into perspective</li>
+                  <li tabindex="0">You’ll learn how to make your job as a SWE more effective</li>
+                </ul>
+              </li>
+            </ul>
+
+            <h3 tabindex="0">Week 11:</h3>
+            <ul>
+              <li tabindex="0">Start working on your end of internship presentation. Look at the notes you took during the first cohort’s intern presentations to make your presentation great</li>
+              <li tabindex="0">Send a list of topic ideas to your mentor for review. They can help you prioritize topics and it also communicates what your plans are so you both are on the same page</li>
+              <li tabindex="0">Some companies might have you film a short 3 minute presentation, use that to practice how to quickly explain what you accomplished
+                <ul>
+                  <li tabindex="0">Then take the same presentation and add more technical details for the 10-15 minute presentation you’ll give to your org</li>
+                </ul>
+              </li>
+              <li tabindex="0">Look up tips for how to present confidently and charismatically, as well as how to engage the audience</li>
+              <li tabindex="0">Send a copy of the short video presentation to your mentor or present your slides to your mentor for feedback
+                <ul>
+                  <li tabindex="0">They can help you adjust what talking points are most important to highlight</li>
+                </ul>
+              </li>
+            </ul>
+
+            <h3 tabindex="0">Week 12:</h3>
+            <ul>
+              <li tabindex="0">Present your presentation!</li>
+              <li tabindex="0">Wrap up loose ends with your project, create hand off documents for the engineer taking on your work if you have anything incomplete</li>
+              <li tabindex="0">Create or add on to established intern ramp up docs
+                <ul>
+                  <li tabindex="0">Document information about useful links and knowledge gaps</li>
+                  <li tabindex="0">Think back to times when you had to go through multiple people to find the answer, can you put it in one place for everyone to reference?</li>
+                  <li tabindex="0">What you wish you knew at the start</li>
+                  <li tabindex="0">If you end up creating these docs, present them in the next relevant team meeting. Answer questions about its intentions and when it should be referenced. This information can be for any new hire, not just an intern</li>
+                </ul>
+              </li>
+              <li tabindex="0">Set up final meetings with your mentor and manager
+                <ul>
+                  <li tabindex="0">Reiterate your desire to come back full-time</li>
+                  <li tabindex="0">Thank them for their support and guidance throughout the 12 weeks</li>
+                  <li tabindex="0">Ask for any remaining action items to wrap up your time</li>
+                  <li tabindex="0">Ask for linkedin recommendations from them to put on your profile</li>
+                  <li tabindex="0">Share with them the top things you accomplished, to refresh them on how good of an intern you were</li>
+                </ul>
+              </li>
+              <li tabindex="0">Save the contact of helpful people
+                <ul>
+                  <li tabindex="0">Connect with everyone on LinkedIn</li>
+                  <li tabindex="0">Save their company emails if you want</li>
+                  <li tabindex="0">Take note of why they were helpful to you, any personality quirks that you can reference in the future if you want to warm email them in the future</li>
+                </ul>
+              </li>
+            </ul>
+
+            <h3 tabindex="0">Last day</h3>
+            <ul>
+              <li tabindex="0">Send out a thank you message to the org slack channel, and any sub channels/people that you want to personally thank.</li>
+              <li tabindex="0">Take pictures of you at your desk, in the cafeteria, anywhere that you want to remember for the future. (don’t take photos of any sensitive company info ofc)</li>
+              <li tabindex="0">Turn in your equipment</li>
+              <li tabindex="0">Savor your last hours in the office!</li>
+              <li tabindex="0">Walk out and go home. Congratulations on successfully completing your summer internship! 🎉</li>
+            </ul>
           </div>
         </div>
       </div>

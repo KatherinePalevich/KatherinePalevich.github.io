@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-9E7TEPFVFH"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -14,43 +13,42 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Katherine Palevich | Advice For Summer Internships" />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#000" />
+  <meta name="description" content="Katherine Palevich | Internship Advice" />
   <meta name="author" content="katherine palevich" />
-  <title>Katherine Palevich | Internship Advice</title>
-  
+  <title>Katherine Palevich | Advice For Summer Internships</title>
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Passions+Conflict&family=Orbitron&family=Fira+Code&family=Six+Caps" />
 
   <style>
-    .week-heading {
+    /* Styling for the content text and bullets to ensure readability */
+    .about-info p, .about-info h3, .about-info ul li {
+      color: #ffffff !important;
+    }
+    .about-info h3 {
       font-family: 'Orbitron', sans-serif;
-      color: #fff;
-      margin-top: 40px;
-      margin-bottom: 20px;
-      text-transform: uppercase;
-      letter-spacing: 2px;
-      border-bottom: 1px solid #333;
-      padding-bottom: 10px;
+      font-size: 1.8rem;
+      margin-top: 2rem;
+      margin-bottom: 1rem;
     }
-    .internship-content p {
-      font-family: 'Fira Code', monospace;
-      line-height: 1.6;
-    }
-    .internship-content ul {
-      list-style-type: none;
+    .about-info ul {
+      list-style: none;
       padding-left: 0;
     }
-    .internship-content li {
-      margin-bottom: 10px;
-      padding-left: 20px;
+    .about-info ul li {
       position: relative;
+      padding-left: 1.5rem;
+      margin-bottom: 0.8rem;
+      font-family: 'Fira Code', monospace;
     }
-    .internship-content li::before {
-      content: ">";
+    .about-info ul li::before {
+      content: "\2022"; /* Unicode bullet point dot */
       position: absolute;
       left: 0;
-      color: #fff;
+      color: #ffffff;
+      font-weight: bold;
     }
   </style>
 </head>
@@ -62,19 +60,40 @@
 
     <div class="navbar" id="navbar">
       <div class="hey">Hey!</div>
-      <div class="logo" tabindex="0">
-        <div class="logo-top"></div>
+      <div class="logo" tabindex="0" aria-label="katherine palevich logo">
+        <div class="logo-top">
+        </div>
       </div>
       <div class="navbar-tabs" id="navbar-tabs">
         <ul class="navbar-tabs-ul">
-          <li class="home activeThistab" data-aos="fade-down" data-aos-delay="100">
-            <a href="index.html#home">&#60;/Home&#62;</a>
+          <li class="home activeThistab" class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="100">
+            <a href="index.html#home" tabindex="0" aria-label="Home menu button">
+              &#60;/Home&#62;
+            </a>
           </li>
-          <li class="about" data-aos="fade-down" data-aos-delay="300">
-            <a href="index.html#about">&#60;/AboutMe&#62;</a>
+
+          <li class="about" class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="300">
+            <a href="index.html#about" aria-label="about menu button">
+              &#60;/AboutMe&#62;
+            </a>
           </li>
-          <li class="experience" data-aos="fade-down" data-aos-delay="500">
-            <a href="index.html#experience">&#60;/InternshipAdvice&#62;</a>
+
+          <li class="experience" class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="500">
+            <a href="index.html#experience" aria-label="experience menu button">
+              &#60;/Experience&#62;
+            </a>
+          </li>
+
+          <li class="projects" class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="700">
+            <a href="index.html#projects" aria-label="projects menu button">
+              &#60;/Projects&#62;
+            </a>
+          </li>
+
+          <li class="skills" class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="900">
+            <a href="index.html#skills" aria-label="skills menu button">
+              &#60;/Skills&#62;
+            </a>
           </li>
         </ul>
       </div>
@@ -82,104 +101,112 @@
   </header>
 
   <main>
+    <div class="hamburger" id="hamburger" data-aos="fade">
+      <div class="hamburgerbase">
+        <button id="hamburger-button" onclick="hamburgerMenu()" tabindex="0" aria-label="Menu Button">
+          <span class="burger-bar" id="burger-bar1"></span>
+          <span class="burger-bar" id="burger-bar2"></span>
+          <span class="burger-bar" id="burger-bar3"></span>
+        </button>
+      </div>
+    </div>
+
+    <div class="mobiletogglemenu" id="mobiletogglemenu">
+      <ul class="mobile-navbar-tabs-ul" id="mobile-ul">
+        <li id="home-mobile-tab" class="mobile-navbar-tabs-li home activeThismobiletab" onclick="hidemenubyli()">
+          <a href="index.html#home" tabindex="0" aria-label="Home menu button">
+            &#60;/Home&#62;
+          </a>
+        </li>
+        <li id="aboutme-mobile-tab" class="mobile-navbar-tabs-li about" onclick="hidemenubyli()">
+          <a href="index.html#about" tabindex="0" aria-label="about menu button">
+            &#60;/AboutMe&#62;
+          </a>
+        </li>
+        <li id="aboutme-mobile-tab" class="mobile-navbar-tabs-li experience" onclick="hidemenubyli()">
+          <a href="index.html#about" tabindex="0" aria-label="experience menu button">
+            &#60;/Experience&#62;
+          </a>
+        </li>
+        <li id="skills-mobile-tab" class="mobile-navbar-tabs-li skills" onclick="hidemenubyli()">
+          <a href="index.html#skills" tabindex="0" aria-label="skills menu button">
+            &#60;/Skills&#62;
+          </a>
+        </li>
+        <li id="projects-mobile-tab" class="mobile-navbar-tabs-li projects" onclick="hidemenubyli()">
+          <a href="index.html#projects" tabindex="0" aria-label="projects menu button">
+            &#60;/Projects&#62;
+          </a>
+        </li>
+      </ul>
+    </div>
+
     <section class="experience-section-container" id="experience" data-aos="fade-up">
       <div class="experience-section">
         <div class="section-heading">
-          <h2 class="section-heading-article" tabindex="0" aria-label="Internship Advice heading">
+          <h2 class="section-heading-article" tabindex="0" aria-label="Advice heading">
             &#60;/Advice For Summer Internships&#62;
           </h2>
-          <p class="sectionHeadingP">Guidelines for a successful 12-week tech internship</p>
+          <p class="sectionHeadingP"></p>
         </div>
 
         <div class="info-dp-section">
-          <div class="about-info internship-content">
+          <div class="about-info">
             <p tabindex="0">
-              Hello! My name is Katherine. I interned at Pinterest in the summer of 2025 and at Experian in the summer of 2024. [cite: 1] 
-              This timeline is based on my experience at large tech companies as an iOS engineer, where projects typically run 4-8 weeks. [cite: 2] 
-              Coming from the University of Washington, which uses a quarter system, I often joined later cohorts in June. [cite: 3, 4] 
-              Please treat these checkpoints as guidelines for your own journey. [cite: 5, 6, 7]
+              Hello! My name is Katherine, I interned at Pinterest in the summer of 2025 and at Experian in the summer of 2024. This experience is heavily biased towards working at a large tech company, and as an iOS engineer where projects are usually 4 - 8 weeks long. I attended the University of Washington which is on a quarter system, meaning I was part of a later cohort starting in early June. Use these checkpoints as guidelines for your progress!
             </p>
             <br />
 
-            <h3 class="week-heading">&#60;Week 1: Ease into it&#62;</h3>
+            <h3 tabindex="0">Week 1: Ease into it</h3>
+            <ul>
+              <li tabindex="0">Carefully set up your accounts and keep track of passwords in a specific document. Save usernames and passwords in a personal account for any accounts you may need access to after leaving.</li>
+              <li tabindex="0">Set up HSA, 401k, and Roth IRA contribution amounts as they become available.</li>
+              <li tabindex="0">Learn what company perks you get and spend your employee wellness funds before the quarter ends.</li>
+              <li tabindex="0">Set up a journal to keep track of tasks, meeting notes, and feedback. This is your "receipt" for performance reviews.</li>
+              <li tabindex="0">Note who you talked to and save useful links. Create a tab for screenshots of praise messages for a morale boost.</li>
+              <li tabindex="0">Exhaust documentation and internal search tools before asking humans for help. When asking, provide context on what you already tried.</li>
+              <li tabindex="0">Get lunch with other interns and team members. Meet your manager to discuss expectations, the performance rubric, and your goals for a return offer.</li>
+            </ul>
+
+            <h3 tabindex="0">Week 2: Defining Communication</h3>
+            <ul>
+              <li tabindex="0">Establish communication expectations with your mentor—daily vs. weekly syncs.</li>
+              <li tabindex="0">Ask for knowledge resources and identify which recurring meetings are actually relevant to your project.</li>
+              <li tabindex="0">Summarize meeting points and action items for your mentor to show progress.</li>
+              <li tabindex="0">Aim to finish your ramp-up project by the end of this week.</li>
+              <li tabindex="0">Set up coffee chats (max twice a week) with PMs, UX designers, and engineers of various levels.</li>
+            </ul>
+
+            <h3 tabindex="0">Week 3 & 4: Projects and Demos</h3>
+            <ul>
+              <li tabindex="0">Begin your first big project.</li>
+              <li tabindex="0">Talk to interns in earlier cohorts about their mid-internship reviews to learn from their feedback early.</li>
+              <li tabindex="0">Volunteer to demo your work in team meetings to practice showcasing your progress.</li>
+            </ul>
+
+            <h3 tabindex="0">Week 5 & 6: Mid-Internship Review</h3>
+            <ul>
+              <li tabindex="0">Review your journal for technical and interpersonal wins. Align these with the intern rubric keywords.</li>
+              <li tabindex="0">Use your review to identify concrete action items for improvement. Don't assume everything is fine; always look for ways to grow.</li>
+              <li tabindex="0">Wrap up your first project and start your second.</li>
+            </ul>
+
+            <h3 tabindex="0">Week 7 & 8: Skip-Levels and Showcases</h3>
+            <ul>
+              <li tabindex="0">Meet your skip-manager to learn about their career journey and get high-level business context.</li>
+              <li tabindex="0">Attend final intern presentations for the first cohort. Take notes on what makes a presentation effective—graphics, demos, and high-level technical summaries.</li>
+            </ul>
+
+            <h3 tabindex="0">Week 11 & 12: Wrapping Up</h3>
+            <ul>
+              <li tabindex="0">Start your end-of-internship presentation early. Record a short practice video and a longer technical version for your org.</li>
+              <li tabindex="0">Create hand-off documents and update internal ramp-up docs to help the next hire.</li>
+              <li tabindex="0">Set up final meetings with your mentor and manager. Reiterate your desire for a return offer and request LinkedIn recommendations.</li>
+            </ul>
+
+            <h3 tabindex="0">Last Day</h3>
             <p tabindex="0">
-              Focus on setting up your environment and building a foundation. [cite: 9]
-            </p>
-            <ul>
-              <li tabindex="0">Set up corporate, developer, and insurance accounts; save passwords in a personal account for future access. [cite: 10]</li>
-              <li tabindex="0">Research company perks (like employee wellness funds) and check contribution timelines for HSAs or 401ks. [cite: 10, 11, 13, 14]</li>
-              <li tabindex="0">Start a journal to track tasks, feedback, and "screenshot wins" for your performance reviews. [cite: 16, 17, 18, 20]</li>
-              <li tabindex="0">Exhaust documentation and internal search tools before asking your mentor for help on your ramp-up project. [cite: 23, 24, 25]</li>
-              <li tabindex="0">Socialize with other interns and your team; ask your manager about the intern rubric and expectations for a return offer. [cite: 27, 35, 41, 43, 50, 54]</li>
-            </ul>
-
-            <h3 class="week-heading">&#60;Week 2: Defining Workflow&#62;</h3>
-            <p tabindex="0">
-              Establish communication patterns and identify key resources. [cite: 62]
-            </p>
-            <ul>
-              <li tabindex="0">Align with your mentor on daily vs. weekly updates and ask which recurring meetings are actually worth your time. [cite: 63, 64, 69, 72]</li>
-              <li tabindex="0">Aim to finish your ramp-up project by the end of this week. [cite: 74]</li>
-              <li tabindex="0">Schedule coffee chats (max 2x a week) with PMs, designers, and engineers to understand the team history. [cite: 42, 75, 76]</li>
-              <li tabindex="0">Join Employee Resource Groups (ERGs) to find community. [cite: 79]</li>
-            </ul>
-
-            <h3 class="week-heading">&#60;Week 3: The Big Project Begins&#62;</h3>
-            <ul>
-              <li tabindex="0">Start your first major project. [cite: 81]</li>
-              <li tabindex="0">Talk to interns in earlier cohorts about their mid-internship reviews to learn from their feedback early. [cite: 82, 83, 85]</li>
-            </ul>
-
-            <h3 class="week-heading">&#60;Week 4: Visibility&#62;</h3>
-            <ul>
-              <li tabindex="0">Volunteer to demo your progress in team meetings to practice showcasing your work. [cite: 88, 90]</li>
-              <li tabindex="0">Immediately correct any negative habits identified in previous feedback loops. [cite: 87]</li>
-            </ul>
-
-            <h3 class="week-heading">&#60;Week 5 & 6: Mid-Internship Review&#62;</h3>
-            <p tabindex="0">
-              This is a critical pivot point for growth. [cite: 94, 96]
-            </p>
-            <ul>
-              <li tabindex="0">Review your journal for technical and interpersonal wins; use AI to polish your self-review writing. [cite: 97, 104]</li>
-              <li tabindex="0">If your grade is lower than expected, don't worry—managers want to see improvement by the end. [cite: 106, 107, 108]</li>
-              <li tabindex="0">If you don't receive concrete action items for improvement, explicitly ask for them. [cite: 110, 113]</li>
-              <li tabindex="0">Wrap up your first project and transition to the second. [cite: 117]</li>
-            </ul>
-
-            <h3 class="week-heading">&#60;Week 7 & 8: Broadening Perspectives&#62;</h3>
-            <ul>
-              <li tabindex="0">Meet your skip-manager to discuss their career journey. [cite: 119, 121]</li>
-              <li tabindex="0">Attend the first cohort's project showcases; take notes on what makes their presentations engaging (graphics, demos, etc.). [cite: 125, 126, 127]</li>
-            </ul>
-
-            <h3 class="week-heading">&#60;Week 9 & 10: The Home Stretch&#62;</h3>
-            <ul>
-              <li tabindex="0">Push hard to complete remaining project tasks. [cite: 130, 132]</li>
-              <li tabindex="0">Identify any remaining people in the company you want to meet and schedule those chats. [cite: 134, 135]</li>
-            </ul>
-
-            <h3 class="week-heading">&#60;Week 11: Polish & Perspective&#62;</h3>
-            <ul>
-              <li tabindex="0">Meet with directors or marketing leads to see how your SWE work fits into the broader business. [cite: 137, 138]</li>
-              <li tabindex="0">Start your final presentation; record a 3-minute version for practice before the full 15-minute org presentation. [cite: 140, 143, 144]</li>
-            </ul>
-
-            <h3 class="week-heading">&#60;Week 12: Wrapping Up&#62;</h3>
-            <p tabindex="0">
-              Leave a lasting positive impression. [cite: 147]
-            </p>
-            <ul>
-              <li tabindex="0">Present your final work and create hand-off documentation for the next engineer. [cite: 149, 150]</li>
-              <li tabindex="0">Build or update "ramp-up docs" to help future interns. [cite: 152, 153]</li>
-              <li tabindex="0">Reiterate your desire for a return offer to your manager. [cite: 159]</li>
-              <li tabindex="0">Request LinkedIn recommendations and save personal contact info for your network. [cite: 161, 163, 164]</li>
-            </ul>
-
-            <h3 class="week-heading">&#60;Last Day: Savor the Moment&#62;</h3>
-            <p tabindex="0">
-              Send a thank-you message to the Slack org, take photos of your workspace (no sensitive info!), and turn in your gear. [cite: 167, 168, 169, 170] 
-              Congratulations on finishing! [cite: 172]
+              Send out thank-you messages, take pictures to remember the experience (no sensitive info!), and turn in your equipment. Congratulations on successfully completing your summer internship!
             </p>
           </div>
         </div>
@@ -188,29 +215,36 @@
   </main>
 
   <footer id="footer">
-    <button class="fas" id="backtotopbutton" onclick="window.scrollTo(0,0)">
-      <article>&#8592;BACK TO TOP</article>
+    <button class="fas" id="backtotopbutton" onclick="scrolltoTopfunction()">
+      <article aria-label="Back to top">&#8592;BACK TO TOP</article>
     </button>
     <div class="footer-bottom">
       <article>
-        Written by Katherine Palevich | © 2026
+        Written by Katherine Palevich &#169; 2026
       </article>
     </div>
   </footer>
 
+  <script src="main.js"></script>
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
     AOS.init();
-    
-    // Simple Cursor Script
+
     const cursorInner = document.getElementById("cursor-inner");
     const cursorOuter = document.getElementById("cursor-outer");
-    document.addEventListener("mousemove", (e) => {
-      cursorInner.style.left = e.clientX + "px";
-      cursorInner.style.top = e.clientY + "px";
-      cursorOuter.style.left = e.clientX + "px";
-      cursorOuter.style.top = e.clientY + "px";
+    const links = document.querySelectorAll("a,label,button");
+
+    document.addEventListener("mousemove", function (e) {
+      const posX = e.clientX;
+      const posY = e.clientY;
+      cursorInner.style.left = `${posX}px`;
+      cursorInner.style.top = `${posY}px`;
+      cursorOuter.animate({
+        left: `${posX}px`,
+        top: `${posY}px`,
+      }, { duration: 500, fill: "forwards" });
     });
   </script>
 </body>
+
 </html>

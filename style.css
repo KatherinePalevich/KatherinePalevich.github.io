@@ -2131,6 +2131,7 @@ left: 0px;
     font-size: 2rem;
     font-family: 'Orbitron', sans-serif;
     color: white;
+    padding-top: 15px;
 }
 
 .blog-box .ProjectDescription {
@@ -2138,12 +2139,4 @@ left: 0px;
     color: #cccccc;
     font-family: 'Fira Code', monospace;
     line-height: 1.5;
-}
-
-.blog-section .section-heading-article {
-    font-size: 3rem;
-    font-family: 'Fira Code', monospace;
-    background: -webkit-linear-gradient(#fff, #ff8a00);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
 }

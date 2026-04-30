@@ -22,6 +22,58 @@
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="blog.css" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Passions+Conflict&family=Orbitron&family=Fira+Code&family=Six+Caps" />
+
+  <style>
+    /* Styling for the content text and bullets to ensure readability */
+    .about-info {
+      padding: 0 40px; /* Side padding */
+    }
+    .about-info p, .about-info h3, .about-info ul li {
+      color: var(--color-white) !important;
+    }
+    .about-info h3 {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 1.8rem;
+      margin-top: 2.5rem;
+      margin-bottom: 1.2rem;
+      border-bottom: 1px solid #333;
+      padding-bottom: 10px;
+    }
+    .about-info ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    .about-info ul li {
+      position: relative;
+      padding-left: 1.8rem;
+      margin-bottom: 1rem;
+      font-family: 'Fira Code', monospace;
+      font-size: 1.2rem;
+      line-height: 1.6;
+    }
+    /* Main Bullet */
+    .about-info ul li::before {
+      content: "\2022"; 
+      position: absolute;
+      left: 0;
+      color: var(--color-white);
+      font-weight: bold;
+    }
+    /* Sub Bullet Styling */
+    .about-info ul ul {
+      margin-top: 0.5rem;
+      padding-left: 1.5rem;
+    }
+    .about-info ul ul li {
+      margin-bottom: 0.5rem;
+      font-size: 1.2rem;
+    }
+    .intro-section {
+        margin-bottom: 2rem;
+        font-family: 'Fira Code', monospace;
+        line-height: 1.7;
+    }
+  </style>
 </head>
 
 <body class="body">

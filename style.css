@@ -1969,8 +1969,7 @@ footer {
     }
 
     .dp img,
-    .image-container,
-    .image-caption {
+    .image-container {
         width: 200px;
     }
 
@@ -2169,10 +2168,18 @@ left: 0px;
     color: var(--color-white);
 }
 
+.blog-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto 0 auto;
+    object-fit: contain;
+}
+
 .image-caption {
-    width: 300px;
+    width: 100%;
     font-size: 1.2rem;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 5px;
     color: var(--color-ddd-color);
 }

@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+
+.--.   .--.     ____   ,---------. .---.  .---.     .-''-.  .-------.   .-./`) ,---.   .--.    .-''-.
+|  | _/  /    .'  __ `.\          \|   |  |_ _|   .'_ _   \ |  _ _   \  \ .-.')|    \  |  |  .'_ _   \
+| (`' ) /    /   '  \  \`--.  ,---'|   |  ( ' )  / ( ` )   '| ( ' )  |  / `-' \|  ,  \ |  | / ( ` )   '
+|(_ ()_)     |___|  /  |   |   \   |   '-(_{;}_). (_ o _)  ||(_ o _) /   `-'`"`|  |\_ \|  |. (_ o _)  |
+| (_,_)   __    _.-`   |   :_ _:   |      (_,_) |  (_,_)___|| (_,_).' __ .---. |  _( )_\  ||  (_,_)___|
+|  |\ \  |  |.'   _    |   (_I_)   | _ _--.   | '  \   .---.|  |\ \  |  ||   | | (_ o _)  |'  \   .---.
+|  | \ `'   /|  _( )_  |  (_(=)_)  |( ' ) |   |  \  `-'    /|  | \ `'   /|   | |  (_,_)\  | \  `-'    /
+|  |  \    / \ (_ o _) /   (_I_)   (_{;}_)|   |   \       / |  |  \    / |   | |  |    |  |  \       /
+`--'   `'-'   '.(_,_).'    '---'   '(_,_) '---'    `'-..-'  ''-'   `'-'  '---' '--'    '--'   `'-..-'
+
+
+.-------.    ____      .---.       .-''-.  ,---.  ,---..-./`)     _______   .---.  .---.
+\  _(`)_ \ .'  __ `.   | ,_|     .'_ _   \ |   /  |   |\ .-.')   /   __  \  |   |  |_ _|
+| (_ o._)|/   '  \  \,-./  )    / ( ` )   '|  |   |  .'/ `-' \  | ,_/  \__) |   |  ( ' )
+|  (_,_) /|___|  /  |\  '_ '`) . (_ o _)  ||  | _ |  |  `-'`"`,-./  )       |   '-(_{;}_)
+|   '-.-'    _.-`   | > (_)  ) |  (_,_)___||  _( )_  |  .---. \  '_ '`)     |      (_,_)
+|   |     .'   _    |(  .  .-' '  \   .---.\ (_ o._) /  |   |  > (_)  )  __ | _ _--.   |
+|   |     |  _( )_  | `-'`-'|___\  `-'    / \ (_,_) /   |   | (  .  .-'_/  )|( ' ) |   |
+/   )     \ (_ o _) /  |        \\       /   \     /    |   |  `-'`-'     / (_{;}_)|   |
+`---'      '.(_,_).'   `--------` `'-..-'     `---`     '---'    `._____.'  '(_,_) '---'
+
+What are you doing here?! you sneaky developer...
+-->
+
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-9E7TEPFVFH"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-9E7TEPFVFH');
+  </script>
+
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#000" />
+  <meta name="description"
+    content="How I use Google Jules to develop my personal website." />
+  <meta name="keywords"
+    content="katherine palevich,katherine palevich portfolio,katherine palevich Portfolio,katherinepalevich,katherine palevich site,katherine palevich Site,katherine palevich me,katherine palevich web,katherine palevich github,katherinepalevich site,katherinepalevich uiverse,uiverse,katherine palevich uiverse,katherine palevich frontend developer,frontend developer,katherine palevich jaipur,katherine jaipur, ai agent, google jules" />
+  <meta name="author" content="katherine palevich" />
+  <meta property="og:image" content="https://www.katherinepalevich.site/src/png/Preview-card-min.png" />
+  <meta property="og:title" content="Current AI Agent Set up For Website Development" />
+  <meta property="og:description"
+    content="How I use Google Jules to develop my personal website." />
+
+  <meta property="og:url" content="https://katherinepalevich.site/websiteAgentDevelopment.html" />
+  <meta property="og:site_name" content="katherine palevich Portfolio" />
+
+  <meta name="twitter:image:src" content="https://www.katherinepalevich.site/src/png/Preview-card-min.png" />
+  <meta name="twitter:site" content="@Portfolio" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Current AI Agent Set up For Website Development" />
+  <meta name="twitter:description"
+  content="How I use Google Jules to develop my personal website." />
+  <title>Current AI Agent Set up For Website Development</title>
+  <!-- <link rel="icon" type="image/x-icon" href="src/png/main-favicon.png" /> -->
+  <!-- aos cdn -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <!-- stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="blog.css" />
+  <!-- google fonts-->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Passions+Conflict&family=Orbitron&family=Fira+Code&family=Six+Caps" />
+</head>
+
+<body class="body">
+  <audio loop="" id="audioPlayer" style="display: none">
+    <source src="src/mp3/preloader.mp3" type="audio/mp3" />
+  </audio>
+  <div id="preloader"></div>
+  <noscript>Allow Javascript</noscript>
+
+  <header>
+    <div class="cursor-inner" id="cursor-inner"></div>
+    <div class="cursor-outer" id="cursor-outer"></div>
+
+    <div class="navbar" id="navbar">
+      <div class="hey">Hey!</div>
+      <div class="logo" tabindex="0" aria-label="katherine palevich logo">
+        <div class="logo-top">
+          <!-- <img src="src/png/nav-avatar.png" alt="animation-head" id="nav-avatar"/> -->
+        </div>
+      </div>
+      <div class="navbar-tabs" id="navbar-tabs">
+        <ul class="navbar-tabs-ul">
+          <li class="home" class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="100">
+            <a href="index.html#home" tabindex="0" aria-label="Home menu button">
+              &#60;/Home&#62;
+            </a>
+          </li>
+
+          <li class="about" class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="300">
+            <a href="index.html#about" aria-label="about menu button">
+              &#60;/AboutMe&#62;
+            </a>
+          </li>
+
+          <li class="experience" class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="500">
+            <a href="index.html#experience" aria-label="experience menu button">
+              &#60;/Experience&#62;
+            </a>
+          </li>
+
+          <li class="blog activeThistab" class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="500">
+            <a href="index.html#blog" aria-label="blog menu button">
+              &#60;/Blog&#62;
+            </a>
+          </li>
+
+          <li class="projects" class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="700">
+            <a href="index.html#projects" aria-label="projects menu button">
+              &#60;/Projects&#62;
+            </a>
+          </li>
+
+          <li class="skills" class="navbar-tabs-li" data-aos="fade-down" data-aos-delay="900">
+            <a href="index.html#skills" aria-label="skills menu button">
+              &#60;/Skills&#62;
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!-- navbar tabs ends -->
+    </div>
+  </header>
+  <!-- header ends here -->
+
+  <main>
+    <!-- hamburger -->
+    <div class="hamburger" id="hamburger" data-aos="fade">
+      <div class="hamburgerbase">
+        <button id="hamburger-button" onclick="hamburgerMenu()" tabindex="0" aria-label="Menu Button">
+          <span class="burger-bar" id="burger-bar1"></span>
+          <span class="burger-bar" id="burger-bar2"></span>
+          <span class="burger-bar" id="burger-bar3"></span>
+        </button>
+      </div>
+    </div>
+    <!-- hamburger -->
+    <div class="mobiletogglemenu" id="mobiletogglemenu">
+      <ul class="mobile-navbar-tabs-ul" id="mobile-ul">
+        <li id="home-mobile-tab" class="mobile-navbar-tabs-li home" onclick="hidemenubyli()">
+          <a href="index.html#home" tabindex="0" aria-label="Home menu button">
+            &#60;/Home&#62;
+          </a>
+        </li>
+
+        <li id="aboutme-mobile-tab" class="mobile-navbar-tabs-li about" onclick="hidemenubyli()">
+          <a href="index.html#about" tabindex="0" aria-label="about menu button">
+            &#60;/AboutMe&#62;
+          </a>
+        </li>
+        <li id="aboutme-mobile-tab" class="mobile-navbar-tabs-li experience" onclick="hidemenubyli()">
+          <a href="index.html#experience" tabindex="0" aria-label="experience menu button">
+            &#60;/Experience&#62;
+          </a>
+        </li>
+        <li id="blog-mobile-tab" class="mobile-navbar-tabs-li blog activeThismobiletab" onclick="hidemenubyli()">
+          <a href="index.html#blog" tabindex="0" aria-label="blog menu button">
+            &#60;/Blog&#62;
+          </a>
+        </li>
+        <li id="skills-mobile-tab" class="mobile-navbar-tabs-li skills" onclick="hidemenubyli()">
+          <a href="index.html#skills" tabindex="0" aria-label="skills menu button">
+            &#60;/Skills&#62;
+          </a>
+        </li>
+        <li id="projects-mobile-tab" class="mobile-navbar-tabs-li projects" onclick="hidemenubyli()">
+          <a href="index.html#projects" tabindex="0" aria-label="projects menu button">
+            &#60;/Projects&#62;
+          </a>
+        </li>
+      </ul>
+    </div>
+    <!-- mobile toggle menu ends -->
+    <section class="experience-section-container" id="experience" data-aos="fade-up">
+      <div class="experience-section">
+        <div class="section-heading">
+          <h2 class="section-heading-article" tabindex="0" aria-label="Current AI Agent Set up For Website Development heading">
+            &#60;/Current AI Agent Set up For Website Development&#62;
+          </h2>
+          <p class="sectionHeadingP"></p>
+        </div>
+
+        <div class="info-dp-section">
+          <div class="about-info">
+            <p tabindex="0">
+              Current AI Agent Set up For Website Development May 2026
+            </p>
+            <br />
+            <p tabindex="0">
+              Given how fast the state of development tools change in this era of AI agentic software development, I thought it would be nice to snapshot the technologies I’m currently using for various projects in my life.
+            </p>
+            <br />
+            <p tabindex="0">
+              This blog post will cover how I use Jules to develop my personal website, since November 2025:
+            </p>
+            <br />
+            <p tabindex="0">
+              Code storage: Github repository.
+            </p>
+            <br />
+            <p tabindex="0">
+              AI Agent: Google Jules AI (https://jules.google.com/)
+            </p>
+            <br />
+            <p tabindex="0">
+              Why this system works for me: Most of the time, the changes I want to make to my personal website are pretty minute. For example, adjusting text styling or adding a new blog post. That’s why a web based AI agent browser works the best for me. I can connect my Github repository and fire up a session within seconds. I don’t need to update an app on my laptop, git pull, etc. It’s also browser based, so I can close the tab if need be and reopen the tab later once I’ve gotten an email that the task has been completed.
+            </p>
+            <br />
+
+            <img class="blog-image" src="src/png/websiteAgentblog1.png" alt="What I see when I first open Jules" tabindex="0" />
+            <div class="image-caption" tabindex="0">What I see when I first open Jules. I’m so happy that light mode is a feature now 🥹</div>
+            <br />
+
+            <img class="blog-image" src="src/png/websiteAgentblog2.png" alt="Before image" tabindex="0" />
+            <p tabindex="0">
+              Before: I want to add a caption under the About Me photo that highlights the fact that I designed the T-shirt I’m wearing for my university’s Computing Community club.
+            </p>
+            <br />
+
+            <img class="blog-image" src="src/png/websiteAgentblog3.png" alt="Interactive plan setting" tabindex="0" />
+            <p tabindex="0">
+              I make sure to set the chat style to be an “Interactive plan”, so that myself and the agent are on the same page before the agent executes the plan. The agent will send clarifying questions which I answer before it proceeds to implementation. This interactive style is crucial for catching subtle edge cases, as proven by the bug Jules immediately surfaced in the same session.
+            </p>
+            <br />
+
+            <img class="blog-image" src="src/png/websiteAgentblog4.png" alt="Jules responding with clarifying questions" tabindex="0" />
+            <div class="image-caption" tabindex="0">After sending the initial prompt, Jules responds with clarifying questions.</div>
+            <br />
+
+            <img class="blog-image" src="src/png/websiteAgentblog5.png" alt="Short responses" tabindex="0" />
+            <p tabindex="0">
+              You can actually be pretty short with your responses, but make it clear which question each answer corresponds to. For example, my response to '2. I will create a reusable CSS class for the caption (e.g., .image-caption). Should I add this to style.css?” ' was simply '2. Yes', saving time while maintaining clarity.
+            </p>
+            <br />
+
+            <img class="blog-image" src="src/png/websiteAgentblog6.png" alt="Adding tasks based on edge cases" tabindex="0" />
+            <p tabindex="0">
+              You might end up adding more tasks to the session based on edge cases found. In this case, Jules brought up a good point about the square border decoration. This is a bug I’ve been meaning to fix, so perfect timing to address it!
+            </p>
+            <br />
+
+            <img class="blog-image" src="src/png/websiteAgentblog7.png" alt="Jules response summarizing conversation" tabindex="0" />
+            <div class="image-caption" tabindex="0">Jules’ response summarizing the conversation and new direction.</div>
+            <br />
+
+            <img class="blog-image" src="src/png/websiteAgentblog8.png" alt="Jules final plan" tabindex="0" />
+            <p tabindex="0">
+              Once Jules has finalized its plan, it will present it to you for approval. Expand the boxes to read through and gauge if it sounds right.
+            </p>
+            <br />
+
+            <img class="blog-image" src="src/png/websiteAgentblog9.png" alt="Jules executing" tabindex="0" />
+            <div class="image-caption" tabindex="0">Let Jules do its thing!</div>
+            <br />
+
+            <img class="blog-image" src="src/png/websiteAgentblog10.png" alt="Reviewing proposed code changes" tabindex="0" />
+            <p tabindex="0">
+              The nice thing about Jules is you can see the proposed code changes within the same browser window. So you don’t have to go to Github and flip back and forth to the Jules chat window if you see a bug that needs discussing.
+            </p>
+            <br />
+            <p tabindex="0">
+              Once the plan was approved, I was able to fully leverage the asynchronous nature of this web-based system. While Jules executed the website changes, I used the wait time to multitask by prompting two other feature tasks, cleaning my desk space, and catching up on emails.
+            </p>
+            <br />
+
+            <img class="blog-image" src="src/png/websiteAgentblog11.png" alt="Checking in with Jules" tabindex="0" />
+            <div class="image-caption" tabindex="0">It’s nice to check in with Jules and see how it’s testing the website. The dp_hover_screenshot.png is pretty cool!</div>
+            <br />
+
+            <img class="blog-image" src="src/png/websiteAgentblog12.png" alt="Review and merge" tabindex="0" />
+            <p tabindex="0">
+              When Jules is finally ready, you can review the code within the Jules window or look at the code on Github. Then approve and merge the code on Github!
+            </p>
+            <br />
+
+            <img class="blog-image" src="src/png/websiteAgentblog13.png" alt="Before fix recap" tabindex="0" />
+            <p tabindex="0">
+              To recap, before when you viewed the About Me photo, this was what you saw. No caption below the photo and the square corner decoration was buggy.
+            </p>
+            <br />
+
+            <img class="blog-image" src="src/png/websiteAgentblog14.png" alt="After fix recap" tabindex="0" />
+            <p tabindex="0">
+              Now, the caption is there and the border effect works correctly!
+            </p>
+            <br />
+            <p tabindex="0">
+              The nice thing about documenting this feature as a demo is it actually helped make this blog post possible. I didn’t have the reusable css styling code of having captions under images before writing this blog! And I used it five times in just this post alone.
+            </p>
+            <br />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- about section ends  -->
+  </main>
+
+  <footer id="footer">
+    <button class="fas" id="backtotopbutton" onclick="scrolltoTopfunction()">
+      <article aria-label="Back to top">&#8592;BACK TO TOP</article>
+    </button>
+    <div class="footer-background">
+      <div class="footer-blob"></div>
+    </div>
+    <div class="footer-foreground">
+      <div class="footercontainer">
+        <div class="two-words">
+          <!-- <article tabindex="0" aria-label="Learning, Living, and Leveling Up, my quote">
+            "Learning, Living, and Leveling Up."
+          </article> -->
+        </div>
+        <div class="social-media-container">
+          <div class="getintouch-heading">
+            <article>GetinTouch();</article>
+          </div>
+          <div class="logos">
+            <!-- <a href="https://www.instagram.com/pexel_ui/" target="_blank" tabindex="0"
+              aria-label="My instagram"><svg viewBox="0 0 448 512" class="SocialHandle">
+                <path
+                  d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+              </svg></a> -->
+
+            <a href="https://www.linkedin.com/in/katherine-palevich/" target="_blank"
+              aria-label="My Linkdin"><svg class="SocialHandle" viewBox="0 0 448 512">
+                <path
+                  d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z" />
+              </svg></a>
+
+            <a href="https://github.com/katherinepalevich" target="_blank" aria-label="My github"><svg viewBox="0 0 496 512"
+                class="SocialHandle">
+                <path
+                  d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z" />
+              </svg></a>
+
+            <a href="mailto:katpal+personalWebsite@cs.washington.edu" aria-label="My G mail"><svg id="GmailLogo"
+                viewBox="0 0 512 512">
+                <path
+                  d="M64 112c-8.8 0-16 7.2-16 16v22.1L220.5 291.7c20.7 17 50.4 17 71.1 0L464 150.1V128c0-8.8-7.2-16-16-16H64zM48 212.2V384c0 8.8 7.2 16 16 16H448c8.8 0 16-7.2 16-16V212.2L322 328.8c-38.4 31.5-93.7 31.5-132 0L48 212.2zM0 128C0 92.7 28.7 64 64 64H448c35.3 0 64 28.7 64 64V384c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128z" />
+              </svg></a>
+          </div>
+        </div>
+        <div class="footer-avatar-container">
+          <!-- <img src="src/png/footer-avatar-katherine.png" alt="animation-head" class="footer-avatar-img" id="footer-wala-avatar"/>
+          <div class="footer-avatar-face">
+            <div class="footer-avatar-eye footer-left-eye">
+              <div class="footer-pupil"></div>
+            </div>
+            <div class="footer-avatar-eye footer-right-eye">
+              <div class="footer-pupil"></div>
+            </div>
+          </div> -->
+        </div>
+        <div class="footer-bottom">
+          <article>
+            Written by Katherine Palevich
+            &#169; 2024 |
+            Theme by <a href="https://github.com/vinodjangid07/vinodjangid07.github.io">Vinod Jangid</a>
+            &#169; twentytwentythree
+          </article>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- footer ends here -->
+
+  <script src="main.js"></script>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+  <script>
+    function openURL() {
+      var url = "src/pdf/October 2024 Resume.pdf";
+
+      window.open(url, "_blank");
+    }
+  </script>
+
+  <script>
+    const cursorInner = document.getElementById("cursor-inner");
+    const cursorOuter = document.getElementById("cursor-outer");
+    const links = document.querySelectorAll("a,label,button");
+
+    document.addEventListener("mousemove", function (e) {
+      const posX = e.clientX;
+      const posY = e.clientY;
+
+      cursorInner.style.left = `${posX}px`;
+      cursorInner.style.top = `${posY}px`;
+
+      // cursorOuter.style.left = `${posX}px`;
+      // cursorOuter.style.top = `${posY}px`;
+
+      cursorOuter.animate(
+        {
+          left: `${posX}px`,
+          top: `${posY}px`,
+        },
+        { duration: 500, fill: "forwards" }
+      );
+
+      links.forEach((link) => {
+        link.addEventListener("mouseenter", () => {
+          cursorInner.classList.add("hover");
+          cursorOuter.classList.add("hover");
+        });
+        link.addEventListener("mouseleave", () => {
+          cursorInner.classList.remove("hover");
+          cursorOuter.classList.remove("hover");
+        });
+      });
+    });
+  </script>
+  <!-- <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="katherine.palevich07" data-description="Support me on Buy me a coffee!" data-message="" data-color="#BD5FFF" data-position="left" data-x_margin="18" data-y_margin="18"></script> -->
+</body>
+
+</html>

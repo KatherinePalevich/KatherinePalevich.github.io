@@ -536,11 +536,11 @@ noscript {
     z-index: -1
 }
 
-.dp::after,
-.dp::before {
-    height: 300px;
+.image-container::after,
+.image-container::before {
+    height: 100%;
     z-index: -2;
-    content: ""
+    content: "";
 }
 
 .main {
@@ -716,8 +716,8 @@ noscript {
 }
 
 #backtotopbutton,
-.dp::after,
-.dp::before,
+.image-container::after,
+.image-container::before,
 .letsTalkBtn {
     background-color: transparent
 }
@@ -894,8 +894,8 @@ noscript {
     background-image: -webkit-linear-gradient(left, var(--static-heading-gradient-blue), var(--static-heading-gradient-pink))
 }
 
-.dp::after,
-.dp::before,
+.image-container::after,
+.image-container::before,
 .text {
     position: absolute
 }
@@ -938,10 +938,10 @@ noscript {
 }
 
 .dp,
-.dp::after,
-.dp::before,
-.dp:hover::after,
-.dp:hover::before {
+.image-container::after,
+.image-container::before,
+.image-container:hover::after,
+.image-container:hover::before {
     transition-duration: .5s
 }
 
@@ -979,9 +979,9 @@ noscript {
 }
 
 .dp img,
-.dp::after,
-.dp::before {
-    width: 300px
+.image-container::after,
+.image-container::before {
+    width: 100%;
 }
 
 .projects-heading-article,
@@ -1023,24 +1023,31 @@ noscript {
 .dp {
     width: 40%;
     display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    position: relative
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
 }
 
-.dp::before {
+.image-container {
+    position: relative;
+    width: 300px;
+    display: flex;
+}
+
+.image-container::before {
     box-shadow: 2px 2px 0 inset #8000ff, -2px -2px 0 inset transparent
 }
 
-.dp::after {
+.image-container::after {
     box-shadow: 2px 2px 0 inset transparent, -2px -2px 0 inset #8000ff
 }
 
-.dp:hover::after {
+.image-container:hover::after {
     transform: translate(20px, 20px)
 }
 
-.dp:hover::before {
+.image-container:hover::before {
     transform: translate(-20px, -20px)
 }
 
@@ -1846,8 +1853,8 @@ footer {
         margin-left: 0
     }
 
-    .dp::after,
-    .dp::before {
+    .image-container::after,
+    .image-container::before {
         display: none
     }
 
@@ -1961,8 +1968,10 @@ footer {
         font-size: 42%
     }
 
-    .dp img {
-        width: 200px
+    .dp img,
+    .image-container,
+    .image-caption {
+        width: 200px;
     }
 
     .two-words {
@@ -2158,4 +2167,12 @@ left: 0px;
 
 .light-mode .blog-box .blog-date {
     color: var(--color-white);
+}
+
+.image-caption {
+    width: 300px;
+    font-size: 1.2rem;
+    text-align: center;
+    margin-top: 15px;
+    color: var(--color-ddd-color);
 }
